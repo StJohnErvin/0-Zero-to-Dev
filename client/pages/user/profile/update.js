@@ -56,6 +56,7 @@ const Profile = ({ user, token }) => {
                         onChange={handleToggle(c._id)}
                         checked={categories.includes(c._id)}
                         className="mr-2"
+                        defaultChecked
                     />
                     <label className="form-check-label">{c.name}</label>
                 </li>

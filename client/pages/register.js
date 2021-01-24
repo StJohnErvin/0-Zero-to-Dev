@@ -54,13 +54,12 @@ const Register = () => {
             loadedCategories &&
             loadedCategories.map((c, i) => (
                 <li className="list-unstyled" key={c._id}>
-                    <input type="checkbox" onChange={handleToggle(c._id)} className="mr-2" />
+                    <input type="checkbox" defaultChecked onChange={handleToggle(c._id)} className="mr-2" />
                     <label className="form-check-label">{c.name}</label>
                 </li>
             ))
         );
     };
-
     const handleChange = name => e => {
         setState({ ...state, [name]: e.target.value, error: '', success: '', buttonText: 'Register' });
     };

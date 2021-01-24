@@ -157,6 +157,7 @@ const Update = ({ oldLink, token }) => {
                         checked={categories.includes(c._id)}
                         onChange={handleToggle(c._id)}
                         className="mr-2"
+                        defaultChecked
                     />
                     <label className="form-check-label">{c.name}</label>
                 </li>
